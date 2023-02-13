@@ -1,0 +1,8 @@
+.report-header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dash-ruler {
+    border-bottom: 1px dashed #ddd;
+}

@@ -1,0 +1,21 @@
+.card-row {
+    display: grid;
+    grid-template-columns: repeat( 5, minmax(160px, 1fr) );
+    gap: 20px;
+}
+
+.card-img {
+    max-width: 120px;
+    height: 120px;
+}
+.card-img > img {
+    width: 100%;
+}
+
+.card-col {
+    width: 160px;
+    height: auto;
+    padding: 15px 20px;
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 10px;
+}

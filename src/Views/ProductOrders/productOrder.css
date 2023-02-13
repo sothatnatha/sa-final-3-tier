@@ -1,0 +1,26 @@
+.card-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-col {
+    width: 150px;
+    box-shadow: 0 0 10px #ddd;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.card-img {
+    width: 120px;
+}
+.card-img > img {
+    width: 100%;
+}
+
+
+.pos-contents-wrapper {
+    display: flex;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}

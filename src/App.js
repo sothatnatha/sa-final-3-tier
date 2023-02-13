@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import CreateProduct from "./Views/CreateProducts/CreateProduct";
+import ProductOrders from "./Views/ProductOrders/ProductOrders";
+import Login from "./Views/Login/Login";
+import ProductLists from "./Views/ProductLists/ProductLists";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/create-product" element={<CreateProduct />} />
+        <Route path="/product/edit/:id" element={<CreateProduct />} />
+        <Route path="/product-orders" element={<ProductOrders />} />
+        <Route path="/product-lists" element={<ProductLists />} />
+      </Routes>
+      <ToastContainer />
+    </>
   );
 }
 

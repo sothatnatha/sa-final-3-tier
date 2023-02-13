@@ -1,0 +1,19 @@
+
+.login-container {
+    max-width: 280px;
+    margin: 100px auto;
+    box-shadow: 0 0 10px #ddd;
+    padding: 20px;
+    border: 1px solid rgb(235, 230, 230);
+}
+
+.MuiFormControl-root  {
+    width: 100%;
+}
+
+.login-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
